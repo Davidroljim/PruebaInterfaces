@@ -6,6 +6,22 @@ package clases;
 public class Main {
     
     public static void main (String [] args) {
-    	System.out.println("Hola Mundo");
+    	Persona person = new Persona(20,"Rubén","2548598741L");
+    	Persona person2 = new Persona(20,"Rubén","2548598741L");
+    	
+    	MiniList lista = new MiLista();
+    	
+    	lista.add(person);
+    	lista.add(person2);
+    	
+    	if(lista.get(5)==person)
+    		System.out.println("Son iguales");
+    	else
+    		System.out.println("Son diferentes");
+    	
+    	if(lista.get(5)==person2)
+    		System.out.println("Son iguales");
+    	else
+    		System.out.println("Son diferentes");
     }
 }

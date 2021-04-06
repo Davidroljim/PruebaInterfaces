@@ -1,6 +1,5 @@
 package clases;
 
-import com.sun.tools.javac.util.List;
 
 public interface MiniList {
 		
@@ -46,4 +45,9 @@ public interface MiniList {
 	
 	public boolean set (int posicion);
 	
+
+	public Object get (int posicion);
+	/**
+	 * Indica el numero de elementos que tiene la lista
+	 */
 }
